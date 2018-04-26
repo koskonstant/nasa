@@ -1,0 +1,369 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f0f3f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  line-height: 1.75;
+}
+
+header {
+  background: #fff;
+}
+
+#articles h1 {
+  font-size: 24px;
+  color: #333333;
+}
+
+#articles .card {
+  border: 0;
+  border-radius: 0;
+  height: 100%;
+}
+
+#articles .card img {
+  border-radius: 0;
+}
+
+.equal-height {
+  min-height: 255px;
+  overflow: hidden;
+}
+
+.bg-cover, .bg-overlay, .bg-overlay::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0px;
+  padding-left: 0;
+  max-width: 250px;
+}
+
+.card-body.duke {
+  left: 20px !important;
+}
+
+.card-body.duke .card-title a {
+  font-size: 26px;
+}
+
+.card-body.duke .card-title a span {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.card-body .card-title {
+  margin: 0;
+}
+
+.card-body .card-title a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  background: rgba(26, 26, 26, 0.8);
+  padding: 20px 10px 20px 20px;
+  display: block;
+}
+
+.card-body .card-title a:hover {
+  background: #ef293d;
+}
+
+.card-body .card-title a span {
+  display: block;
+}
+
+.navbar-brand img {
+  width: 100px;
+}
+
+#main-menu .navbar-menu .nav-item {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#main-menu .navbar-menu .nav-item a {
+  color: #1a5dad;
+}
+
+#main-menu .navbar-menu .nav-item a:hover {
+  color: #ef293d;
+}
+
+#main-menu .navbar-social-menu .nav-item:last-child a {
+  padding-right: 0;
+}
+
+#main-menu .navbar-social-menu .nav-item a {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #b2b2b3;
+}
+
+#main-menu .navbar-social-menu .nav-item a:hover {
+  color: #8c8c8d;
+}
+
+#main-menu .navbar-social-menu .nav-item i {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+}
+
+.nav-container {
+  position: relative;
+  top: 0;
+}
+
+.lang {
+  position: absolute;
+  right: 15px;
+}
+
+.lang li.active a {
+  background: #1a5dad;
+}
+
+.lang li a {
+  font-family: 'Arimo', sans-serif;
+  font-size: 12px;
+  color: #b2b2b3;
+  padding: 10px;
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+}
+
+.navbar-toggler {
+  font-size: 12px;
+  top: 20px;
+  position: relative;
+  padding: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0;
+  background-color: #1a5dad;
+  border-radius: 0;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.slideshow h2 {
+  background: #1a5dad;
+  color: #fff;
+  padding: 20px 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  background: #5a8ac2;
+  color: #fff;
+}
+
+.carousel.vert .item {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#thumbsCarousel .item .selected {
+  background: #1a5dad;
+  position: relative;
+  display: block;
+}
+
+#thumbsCarousel .item .selected:before {
+  border: 4px solid #1a5dad;
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 35px;
+  height: 35px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (max-width: 767.98px) {
+  .controls {
+    text-align: center;
+  }
+  .controls a {
+    position: static;
+    display: inline-flex;
+  }
+  #thumbsCarousel .col:first-child {
+    padding-left: 0;
+  }
+  #thumbsCarousel .col:last-child {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  .navbar-expand-lg > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .carousel-control-prev {
+    left: -8px;
+  }
+  .carousel-control-next {
+    right: -8px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .card {
+    min-height: 350px;
+  }
+  .space-bottom {
+    margin-bottom: 1rem;
+  }
+  #thumbsCarousel .col {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .nav-item {
+    padding: 10px 15px;
+  }
+  .nav-item .nav-link {
+    padding: 0;
+  }
+  .nav-item .nav-link i {
+    padding: 0 !important;
+  }
+  #main-menu .navbar-social-menu .nav-item a {
+    color: #1a5dad;
+  }
+  #main-menu .navbar-social-menu .nav-item a:hover {
+    color: #ef293d;
+  }
+  #main-menu .navbar-social-menu .nav-item a span {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-control-prev, .carousel-control-next {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+  }
+  .space-bottom {
+    margin-bottom: 30px;
+  }
+  .carousel-item .col {
+    flex-basis: auto;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .carousel-control-prev span, .carousel-control-next span {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .carousel-control-prev {
+    bottom: initial;
+  }
+  .carousel-control-next {
+    top: initial;
+  }
+  .vert .carousel-item-next.carousel-item-left,
+  .vert .carousel-item-prev.carousel-item-right {
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .vert .carousel-item-next,
+  .vert .active.carousel-item-right {
+    -ms-transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+  }
+  .vert .carousel-item-prev,
+  .vert .active.carousel-item-left {
+    -ms-transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+footer * {
+  font-size: 13px;
+  color: #999;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?lpmo9t");
+  src: url("../fonts/icomoon.eot?lpmo9t#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?lpmo9t") format("truetype"), url("../fonts/icomoon.woff?lpmo9t") format("woff"), url("../fonts/icomoon.svg?lpmo9t#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+/*# sourceMappingURL=nasa.css.map */

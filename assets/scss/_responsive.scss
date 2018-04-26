@@ -1,0 +1,131 @@
+@import "../../node_modules/bootstrap/scss/_functions.scss";
+@import "../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+
+@include media-breakpoint-down(sm) {
+  .controls{
+    text-align: center;
+    a{
+      position: static;
+      display: inline-flex;
+    }
+  } 
+  
+  #thumbsCarousel .col:first-child{
+    padding-left:0;
+  }
+
+  #thumbsCarousel .col:last-child{
+    padding-right:0;
+  }
+}
+
+@include media-breakpoint-between(sm, lg) {
+  .navbar-expand-lg > .container{
+    padding-left: 15px;
+    padding-right:15px;
+  }
+
+  .carousel-control-prev{
+    left:-8px;
+  }
+
+  .carousel-control-next{
+    right: -8px;
+  }
+}
+
+
+@include media-breakpoint-down(md) { 
+  .card{
+    min-height: 350px;
+  }
+
+  .space-bottom{
+    margin-bottom:1rem;
+  } 
+
+  #thumbsCarousel .col {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .nav-item{
+    padding: 10px 15px;
+    .nav-link{
+      padding: 0;
+      i{
+        padding:0!important;
+      }
+    }
+  }
+
+  #main-menu .navbar-social-menu .nav-item a{
+    color: $fun-blue;
+    &:hover{
+      color: $amaranth;
+    }
+    span{
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) { 
+  %control-position {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:35px;
+    height:35px;
+  }  
+  
+  .space-bottom{
+    margin-bottom:30px;
+  } 
+
+  .carousel-item .col{
+    flex-basis: auto;
+    margin-top:4px;
+    margin-bottom:4px;
+  }
+
+  .carousel-control-prev span,.carousel-control-next span{
+    -ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    transform: rotate(90deg);
+  }
+
+  .carousel-control-prev{
+    bottom: initial;
+    @extend %control-position;
+  }
+
+  .carousel-control-next{
+    top: initial;
+    @extend %control-position;
+  }
+
+  .vert .carousel-item-next.carousel-item-left,
+  .vert .carousel-item-prev.carousel-item-right {
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .vert .carousel-item-next,
+  .vert .active.carousel-item-right {
+    -ms-transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100% 0);
+  }
+
+  .vert .carousel-item-prev,
+  .vert .active.carousel-item-left {
+    -ms-transform: translate3d(0,-100%, 0);
+    -webkit-transform: translate3d(0,-100%, 0);
+    transform: translate3d(0,-100%, 0);
+  }
+}

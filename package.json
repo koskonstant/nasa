@@ -1,0 +1,23 @@
+{
+    "title": "Bootstrap 4 exersice",
+    "version": "1.0.0",
+    "name": "bootstrap-4",
+    "description": "Web dev project Phase 2",
+    "repository": "https://github.com/koskonstant/nasa.git",
+    "license": "MIT",    
+    "dependencies": {
+        "bootstrap": "4.0.0",
+        "jquery": "3.3.1",
+        "jquery.easing": "^1.4.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.9.2",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.2.1",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-uglify": "3.0.0"        
+      }
+    }
+    

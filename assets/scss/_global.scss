@@ -1,0 +1,87 @@
+body {
+  @include body-font;
+  background: $dark-white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @include heading-font;
+}
+
+p {
+  line-height: 1.75;
+}
+
+header{
+  background: $white;  
+}
+
+#articles{
+  h1{
+    font-size: 24px;
+    color:$mine-shaft;
+  }
+  .card{
+    border:0;
+    border-radius: 0;
+    height: 100%;
+    img{
+      border-radius: 0;
+    }
+  }
+}
+
+.equal-height{
+  min-height: 255px;
+  overflow:hidden;
+}
+
+.bg-cover, .bg-overlay, .bg-overlay::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-body {
+  position: absolute;
+  bottom:0px;
+  padding-left: 0;
+  max-width: 250px;
+  &.duke{
+    left: 20px!important;
+    .card-title a{
+      font-size: 26px;
+      span{
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .card-title{
+    margin: 0;    
+    a{
+      color:white;
+      text-decoration: none;
+      font-size: 16px;
+      background:rgba(26, 26, 26, 0.8);
+      padding: 20px 10px 20px 20px;
+      display: block;
+      &:hover{
+        background: $amaranth;
+      }
+      span{
+        display: block;
+        
+      }
+    }
+  }
+}
+
+
