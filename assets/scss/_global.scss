@@ -15,6 +15,28 @@ header{
   background: $white;  
 }
 
+.lang{
+  position: absolute;
+  right: 15px;
+  z-index: 2;
+  li{
+    margin: 0;
+    &.active a{
+      background: $fun-blue;
+    }
+    a{
+      @include lang-font;
+      font-size:12px;
+      color:$bombay;  
+      text-decoration:none;
+      padding: 10px;
+      &:hover{
+        background: darken( $fun-blue, 15% );
+      }    
+    }
+  }
+}
+
 #articles{
   h1{
     font-size: 24px;

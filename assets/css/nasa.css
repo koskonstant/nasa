@@ -15,6 +15,32 @@ header {
   background: #fff;
 }
 
+.lang {
+  position: absolute;
+  right: 15px;
+  z-index: 2;
+}
+
+.lang li {
+  margin: 0;
+}
+
+.lang li.active a {
+  background: #1a5dad;
+}
+
+.lang li a {
+  font-family: 'Arimo', sans-serif;
+  font-size: 12px;
+  color: #b2b2b3;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.lang li a:hover {
+  background: #10396a;
+}
+
 #articles h1 {
   font-size: 24px;
   color: #333333;
@@ -134,25 +160,6 @@ header {
   top: 0;
 }
 
-.lang {
-  position: absolute;
-  right: 15px;
-}
-
-.lang li.active a {
-  background: #1a5dad;
-}
-
-.lang li a {
-  font-family: 'Arimo', sans-serif;
-  font-size: 12px;
-  color: #b2b2b3;
-  padding: 10px;
-  text-decoration: none;
-  width: 25px;
-  height: 25px;
-}
-
 .navbar-toggler {
   font-size: 12px;
   top: 20px;
@@ -163,6 +170,10 @@ header {
   border: 0;
   background-color: #1a5dad;
   border-radius: 0;
+}
+
+.navbar-expand-lg {
+  z-index: 1;
 }
 
 .slideshow {
