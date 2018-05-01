@@ -7,7 +7,7 @@ var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
 
-// Copy third party libraries from /node_modules into /vendor
+// Copy third party libraries from /node_modules into /assets/vendor
 gulp.task('vendor', function() {
   // Bootstrap
   gulp.src([
@@ -56,6 +56,27 @@ gulp.task('css', ['css:compile', 'css:minify']);
 // Default task
 gulp.task('default', ['css', 'vendor']);
 
+// Minify JavaScript
+gulp.task('js:minify', function() {
+  return gulp.src([
+      './assets/js/*.js',
+      '!./assets/js/*.min.js'
+    ])
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./assets/js'))
+    .pipe(browserSync.stream());
+});
+
+// JS
+gulp.task('js', ['js:minify']);
+
+// Default task
+gulp.task('default', ['css', 'js', 'vendor']);
+
+
 // Configure the browserSync task
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -66,7 +87,8 @@ gulp.task('browserSync', function() {
 });
 
 // Dev task
-gulp.task('dev', ['css', 'browserSync'], function() {
+gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./assets/scss/*.scss', ['css']);
+  gulp.watch('./assets/js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
