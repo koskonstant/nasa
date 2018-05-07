@@ -1,14 +1,40 @@
 body {
-  @include body-font;
+  font-family: 'Roboto', sans-serif;
   background: $dark-white;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  @include heading-font;
+  font-family: 'Roboto Slab', serif;
 }
 
 p {
   line-height: 1.75;
+}
+
+.container{
+  @include make-max-widths-container-width-custom();
+}
+
+@if $enable-grid-classes {
+  .container {
+    @include make-container-custom();
+  }
+}
+
+@if $enable-grid-classes {
+  .container-fluid {
+    @include make-container-custom();
+  }
+}
+
+@if $enable-grid-classes {
+  .row {
+    @include make-row-custom();
+  }
+}
+
+@if $enable-grid-classes {
+  @include make-grid-columns-custom();
 }
 
 header{
@@ -25,7 +51,7 @@ header{
       background: $fun-blue;
     }
     a{
-      @include lang-font;
+      font-family: 'Arimo', sans-serif;
       font-size:12px;
       color:$bombay;  
       text-decoration:none;
@@ -42,68 +68,60 @@ header{
     font-size: 24px;
     color:$mine-shaft;
   }
-  .card{
-    border:0;
-    border-radius: 0;
+  img{
+    width: 100%;
     height: 100%;
-    img{
-      border-radius: 0;
-    }
+    object-fit: cover;
+    object-position: top;
   }
 }
 
-.equal-height{
-  min-height: 255px;
-  overflow:hidden;
+figure{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
-.bg-cover, .bg-overlay, .bg-overlay::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+article a:hover h3{
+  background: $amaranth;
+  transition: all 0.3s ease;
 }
 
-.bg-cover {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.card-body {
+.card-body{
   position: absolute;
   bottom:0px;
   padding-left: 0;
   max-width: 250px;
   &.duke{
-    left: 20px!important;
-    .card-title a{
+    left: 30px!important;
+    max-width: 300px;
+    bottom:20px;
+    padding: 0;
+    .card-title{
       font-size: 26px;
       span{
         font-size: 16px;
         margin-top: 5px;
-      }
-    }
-  }
-  .card-title{
-    margin: 0;    
-    a{
-      color:white;
-      text-decoration: none;
-      font-size: 16px;
-      background:rgba(26, 26, 26, 0.8);
-      padding: 20px 10px 20px 20px;
-      display: block;
-      &:hover{
-        background: $amaranth;
-      }
-      span{
         display: block;
-        
       }
     }
   }
 }
+
+.card-title{
+  margin: 0;   
+  color:white;
+  text-decoration: none;
+  font-size: 16px;
+  background:rgba(26, 26, 26, 0.8);
+  padding: 20px 10px 20px 20px;
+  display: block;
+}
+
+.cubeseats{
+  margin-bottom:20px;
+  overflow: hidden;
+} 
 
 

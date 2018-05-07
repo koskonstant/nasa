@@ -4,21 +4,22 @@
   }
 }
 
-#main-menu{
-  .navbar-menu{
-    .nav-item{
-      padding: 10px 15px;
-      font-weight: bold;
-      font-size: 15px;        
-      text-transform: uppercase;
-      a{        
-        color: $fun-blue;
-        &:hover{
-          color: $amaranth;
-        }
+.navbar-menu{
+  .nav-item{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;        
+    text-transform: uppercase;
+    a{        
+      color: $fun-blue;
+      &:hover{
+        color: $amaranth;
       }
     }
   }
+}
+
+#main-menu{
   .navbar-social-menu{
     .nav-item{
       &:last-child a{
@@ -56,8 +57,10 @@
   border: 0;
   background-color: $fun-blue;
   border-radius: 0;
+  right: -4px;
 }
 
 .navbar-expand-lg{
   z-index: 1;
+
 }
