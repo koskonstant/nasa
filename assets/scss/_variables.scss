@@ -1,13 +1,27 @@
 // Variables
-// Nae from http://chir.ag/
+// Color Names from http://chir.ag/
 
-$white: #fff !default;
 $dark-white :#f0f3f5 !default;
-$black: #000 !default;
-
 $fun-blue: #1a5dad !default;
 $steel-blue: #5a8ac2 !default;
 $amaranth: #ef293d !default;
 $bombay: #b2b2b3 !default;
 $dusty-gray: #999 !default;
 $mine-shaft: #333333 !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1220px
+);
+
+$container-max-widths-custom: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1220px
+);
+
+$grid-gutter-width-custom: 20px;
