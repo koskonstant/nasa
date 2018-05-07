@@ -9,10 +9,11 @@
 
     <link rel="shortcut icon" href="assets/favicons/favicon.png" type="image/x-icon">
     <link rel="icon" href="assets/favicons/favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab|Roboto:400,700" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab|Roboto:400,700" rel="stylesheet">
+    
     <!-- Bootstrap core CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/nasa.css" rel="stylesheet">    
+    <link href="assets/css/bootstrap-imports.css" rel="stylesheet">
+    <link href="assets/css/nasa.css" rel="stylesheet">   
   </head>
 
   <body>
@@ -78,115 +79,135 @@
         </nav>
       </div>             
     </header>
-    <section id="main-carousel">
-      <div class="container">
-        <div id="slider">
+    <main>
+      <section id="main-carousel">
+        <div class="container">
           <div class="row">
             <div class="col-lg-10">
               <div id="myCarousel" class="carousel slide slideshow">
                 <div class="carousel-inner">
-                  <div class="active item carousel-item" data-slide-number="0">
+                  <figure class="active item carousel-item" data-slide-number="0">
                     <img src="assets/img/galabagos.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>The Galápagos Islands</h2>
-                  </div>
-                  <div class="item carousel-item" data-slide-number="1">
+                    <figcaption>
+                      <h2>The Galápagos Islands</h2>
+                    </figcaption>
+                  </figure>
+                  <figure class="item carousel-item" data-slide-number="1">
                     <img src="assets/img/nasa1.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 1</h2>
-                  </div>
-                  <div class="item carousel-item" data-slide-number="2">
+                    <figcaption>
+                      <h2>Nasa 1</h2>
+                    </figcaption>
+                  </figure>
+                  <figure class="item carousel-item" data-slide-number="2">
                     <img src="assets/img/nasa2.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 2</h2>
-                  </div>
-                  <div class="item carousel-item" data-slide-number="3">
+                    <figcaption>
+                      <h2>Nasa 2</h2>
+                    </figcaption>
+                  </figure>
+                  <figure class="item carousel-item" data-slide-number="3">
                     <img src="assets/img/nasa3.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 3</h2>
-                  </div>
-                  <div class="item carousel-item" data-slide-number="4">
+                    <figcaption>
+                      <h2>Nasa 3</h2>
+                    </figcaption>
+                  </figure>
+                  <figure class="item carousel-item" data-slide-number="4">
                     <img src="assets/img/nasa4.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 4</h2>
-                  </div>
-                  <div class="item carousel-item" data-slide-number="5">
+                    <figcaption>
+                      <h2>Nasa 4</h2>
+                    </figcaption>
+                  </figure>
+                  <figure class="item carousel-item" data-slide-number="5">
                     <img src="assets/img/nasa5.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 5</h2>
-                  </div>
-                  <div class="item carousel-item" data-slide-number="6">
+                    <figcaption>
+                      <h2>Nasa 5</h2>
+                    </figcaption>
+                  </figure>
+                  <figure class="item carousel-item" data-slide-number="6">
                     <img src="assets/img/nasa6.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 6</h2>
-                  </div>
-                  <div class="item carousel-item" data-slide-number="7">
+                    <figcaption>
+                      <h2>Nasa 6</h2>
+                    </figcaption>
+                  </figure>
+                  <figure class="item carousel-item" data-slide-number="7">
                     <img src="assets/img/nasa7.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 7</h2>
-                  </div>    
-                  <div class="item carousel-item" data-slide-number="8">
+                    <figcaption>
+                      <h2>Nasa 7</h2>
+                    </figcaption>
+                  </figure>    
+                  <figure class="item carousel-item" data-slide-number="8">
                     <img src="assets/img/nasa8.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 8</h2>
-                  </div>
-                  <div class="item carousel-item" data-slide-number="9">
+                    <figcaption>
+                      <h2>Nasa 8</h2>
+                    </figcaption>
+                  </figure>
+                  <figure class="item carousel-item" data-slide-number="9">
                     <img src="assets/img/nasa9.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                    <h2>Nasa 9</h2>
-                  </div>                      
+                    <figcaption>
+                      <h2>Nasa 9</h2>
+                    </figcaption>
+                  </figure>                      
                 </div>    
               </div>
             </div>
             <div class="col-lg-2">
-              <div id="thumbsCarousel" class="carousel vert slide w-100" data-ride="carousel" data-interval="false">
-                <div class="carousel-inner vertical  w-100 " role="listbox">
+              <div id="thumbsCarousel" class="carousel vert slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner vertical" role="listbox">
                   <div class="carousel-item active item">
-                    <div class="row no-gutters">
-                      <div class="col">
-                          <a id="carousel-selector-0" class="selected">
-                            <img src="assets/img/galabagos.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a id="carousel-selector-1" >
-                            <img src="assets/img/nasa1.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a id="carousel-selector-2" >
-                            <img src="assets/img/nasa2.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a id="carousel-selector-3" >
-                            <img src="assets/img/nasa3.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>
-                      <div class="col">
-                          <a id="carousel-selector-4" >
-                            <img src="assets/img/nasa4.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>
+                    <div class="row">
+                      <figure class="col">
+                        <a id="carousel-selector-0" class="selected">
+                          <img src="assets/img/galabagos.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>
+                      <figure class="col">
+                        <a id="carousel-selector-1" >
+                          <img src="assets/img/nasa1.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>
+                      <figure class="col">
+                        <a id="carousel-selector-2" >
+                          <img src="assets/img/nasa2.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>
+                      <figure class="col">
+                        <a id="carousel-selector-3" >
+                          <img src="assets/img/nasa3.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>
+                      <figure class="col">
+                        <a id="carousel-selector-4" >
+                          <img src="assets/img/nasa4.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>
                     </div>
                   </div>
                   <div class="carousel-item item">  
-                    <div class="row no-gutters">                    
-                      <div class="col" data-slide-to="5" data-target="#myCarousel">
-                          <a id="carousel-selector-5" >
-                            <img src="assets/img/nasa5.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>
-                      <div class="col" data-slide-to="6" data-target="#myCarousel">
-                          <a id="carousel-selector-6" >
-                            <img src="assets/img/nasa6.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>
-                      <div class="col" data-slide-to="7" data-target="#myCarousel">
-                          <a id="carousel-selector-7" >
-                            <img src="assets/img/nasa7.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>  
-                      <div class="col" data-slide-to="8" data-target="#myCarousel">
-                          <a id="carousel-selector-8" >
-                            <img src="assets/img/nasa8.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div> 
-                      <div class="col" data-slide-to="9" data-target="#myCarousel">
-                          <a id="carousel-selector-9" >
-                            <img src="assets/img/nasa9.jpg" class="img-fluid" title="Nasa" alt="Nasa">
-                          </a>
-                      </div>                          
+                    <div class="row">                    
+                      <figure class="col" data-slide-to="5" data-target="#myCarousel">
+                        <a id="carousel-selector-5" >
+                          <img src="assets/img/nasa5.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>
+                      <figure class="col" data-slide-to="6" data-target="#myCarousel">
+                        <a id="carousel-selector-6" >
+                          <img src="assets/img/nasa6.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>
+                      <figure class="col" data-slide-to="7" data-target="#myCarousel">
+                        <a id="carousel-selector-7" >
+                          <img src="assets/img/nasa7.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>  
+                      <figure class="col" data-slide-to="8" data-target="#myCarousel">
+                        <a id="carousel-selector-8" >
+                          <img src="assets/img/nasa8.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure> 
+                      <figure class="col" data-slide-to="9" data-target="#myCarousel">
+                        <a id="carousel-selector-9" >
+                          <img src="assets/img/nasa9.jpg" class="img-fluid" title="Nasa" alt="Nasa">
+                        </a>
+                      </figure>                          
                     </div>
                   </div>
                 </div>
@@ -203,64 +224,66 @@
               </div>
             </div>
           </div>
-        </div>  
-      </div>
-    </section>
-    <section id="articles" class="mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h1 class="section-heading">Latest Articles</h1>
+        </div>
+      </section>    
+      <section id="articles" class="mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="section-heading">Latest Articles</h1>
+            </div>
+          </div>
+          <div class="row is-flex">            
+            <article class="col-lg-6 duke">
+              <a href="#">
+                <figure>
+                  <img class="img-fluid" src="assets/img/charles_duke.jpg" alt="Charles Duke" title="Charles Duke">  
+                  <figcaption class="card-body duke">
+                    <h3 class="card-title">Charles Duke<span>Astronaut Charles M. Duke Jr., lunar module</span></h3>
+                  </figcaption>
+                </figure>   
+              </a>            
+            </article>            
+            <div class="col-lg-6">
+              <div class="row">
+                <article class="col-md-12 same-height cubeseats">
+                  <a href="#">
+                    <figure>
+                      <img class="img-fluid " src="assets/img/cubeseats.jpg" alt="InSight Atlas V MARCO Cubesats Installation" title="InSight Atlas V MARCO Cubesats Installation">  
+                      <figcaption class="card-body">
+                        <h3 class="card-title">InSight Atlas V MARCO Cubesats Installation</h3>
+                      </figcaption>
+                    </figure>
+                  </a>                  
+                </article>
+                <article class="col-md-6 same-height">
+                  <a href="#">
+                    <figure>
+                      <img class="img-fluid " src="assets/img/apollo.jpg" alt="Apollo 16 Command and Service Module Over the Moon" title="Apollo 16 Command and Service Module Over the Moon">  
+                      <figcaption class="card-body">
+                        <h3 class="card-title">Apollo 16 Command and Service Module Over the Moon</h3>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </article>
+                <article class="col-md-6 same-height ultraviolet">
+                  <a href="#">
+                    <figure>
+                      <img class="img-fluid " src="assets/img/ultraviolet.jpg" alt="The Earth as seen in Ultraviolet from the Moon" title="The Earth as seen in Ultraviolet from the Moon">  
+                      <figcaption class="card-body">
+                        <h3 class="card-title">The Earth as seen in Ultraviolet from the Moon</h3>
+                      </figcaption>
+                    </figure>   
+                  </a>               
+                </article>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row is-flex">
-          <div class="col-lg-6 mbxs-3 mb-3 mb-sm-3 mb-lg-0">						
-            <div class="card m-0 ">                  
-              <div class="bg-cover" style="background-image: url(assets/img/charles_duke.jpg)"></div>    
-              <div class="bg-overlay"></div>    
-              <div class="card-body duke">   
-                <h3 class="card-title"><a href="#">Charles Duke<span>Astronaut Charles M. Duke Jr., lunar module</span></a></h3>  
-              </div>    
-            </div>    
-          </div>
-          <div class="col-lg-6">
-            <div class="row space-bottom">
-              <div class="col-md-12">
-                <div class="card equal-height ">                  
-                  <div class="bg-cover" style="background-image: url(assets/img/cubeseats.jpg)"></div>    
-                  <div class="bg-overlay"></div>    
-                  <div class="card-body">   
-                    <h3 class="card-title"><a href="#">InSight Atlas V MARCO Cubesats Installation</a></h3>  
-                  </div>    
-                </div>  
-              </div>              
-            </div>
-            <div class="row">
-              <div class="col-md-6 mb-3 mb-md-0">
-                <div class="card equal-height">                  
-                  <div class="bg-cover" style="background-image: url(assets/img/apollo.jpg)"></div>    
-                  <div class="bg-overlay"></div>    
-                  <div class="card-body">   
-                    <h3 class="card-title"><a href="#">Apollo 16 Command and Service Module Over the Moon</a></h3>  
-                  </div>    
-                </div>  
-              </div> 
-              <div class="col-md-6">
-                <div class="card equal-height">                  
-                  <div class="bg-cover" style="background-image: url(assets/img/ultraviolet.jpg)"></div>    
-                  <div class="bg-overlay"></div>    
-                  <div class="card-body">   
-                    <h3 class="card-title"><a href="#">The Earth as seen in Ultraviolet from the Moon</a></h3>  
-                  </div>    
-                </div>  
-              </div>             
-            </div>
-          </div>             
-        </div>
-      </div>
-    </section>  
+      </section>
+    </main>  
     <footer>
-      <div class="container pt-5 pb-4">
+      <div class="container pt-4 pb-4">
         <div class="row">
           <div class="col-xs-12 col-sm-7 col-md-8">
             <span class="copyright">images &copy; nasa.gov | Bootstrap 4.0 practice</span>
